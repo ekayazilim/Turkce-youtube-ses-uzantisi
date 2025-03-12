@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Türkçe Seslendirme</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>YouTube Türkçe Seslendirme</h1>
+    
+    <div class="status-container">
+      <div class="status-label">Durum:</div>
+      <div class="status-value" id="status">Beklemede</div>
+    </div>
+
+    <div class="switch-container">
+      <span>Eklenti:</span>
+      <label class="switch">
+        <input type="checkbox" id="enableExtension">
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <div class="option-section">
+      <h2>Seslendirme Seçenekleri</h2>
+      
+      <div class="option">
+        <label>Ses Cinsiyet:</label>
+        <select id="voiceGender">
+          <option value="female">Kadın</option>
+          <option value="male">Erkek</option>
+        </select>
+      </div>
+      
+      <div class="option">
+        <label>Orijinal Ses Seviyesi:</label>
+        <input type="range" min="0" max="100" value="20" id="originalVolume">
+        <span id="volumeValue">20%</span>
+      </div>
+      
+      <div class="option">
+        <label>Çeviri Modu:</label>
+        <select id="translationMode">
+          <option value="realtime">Gerçek Zamanlı</option>
+          <option value="preprocess">Ön İşleme</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="info-section">
+      <h2>Video Bilgileri</h2>
+      <div class="info-item">
+        <span>Algılanan Dil:</span>
+        <span id="detectedLanguage">-</span>
+      </div>
+      <div class="info-item">
+        <span>Video Adı:</span>
+        <span id="videoTitle">-</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <button id="saveSettings">Ayarları Kaydet</button>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

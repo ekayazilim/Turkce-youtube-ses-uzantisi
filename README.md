@@ -45,4 +45,4 @@ Bu eklenti aşağıdaki teknolojileri kullanır:
 
 ## Lisans
 
-MIT Lisansı
+Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına bakın.
